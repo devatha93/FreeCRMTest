@@ -1,0 +1,16 @@
+browser=chroMe 
+ 
+ // we can comment  with the help of # 
+ //  after commenting again run we  will get the output " null " 
+ //  what we are using variable name that name should be use our code also .
+ // if we not use we will get" null "output  ex Browser
+ // it is casesencitive 
+ // space should not give
+ 
+
+urL = http://demo.guru99.com/V1/index.php
+
+userName = mngr347425
+password = pAgemeb
+
+
