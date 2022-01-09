@@ -8,8 +8,11 @@
     <classes>
       <class name="TestNGListenerConcept.ScreenshotTest">
         <methods>
-          <include name="takeScreenshotTest"/>
+          <include name="createContactsTest"/>
+          <include name="searchTest"/>
+          <include name="loginTest"/>
           <include name="tearDown"/>
+          <include name="HomePageTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- TestNGListenerConcept.ScreenshotTest -->

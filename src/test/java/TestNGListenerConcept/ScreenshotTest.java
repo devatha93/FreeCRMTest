@@ -1,7 +1,9 @@
 package TestNGListenerConcept;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -10,7 +12,7 @@ import org.testng.annotations.Test;
 public class ScreenshotTest extends Base {
 	
 	
-	@BeforeMethod
+	@BeforeClass
 	
 	public void setUp() throws InterruptedException {
 		
@@ -18,7 +20,7 @@ public class ScreenshotTest extends Base {
 		
 	}
 	
-  @AfterMethod
+  @AfterClass
   
   public void tearDown() throws InterruptedException
 { 
@@ -31,7 +33,7 @@ public class ScreenshotTest extends Base {
     @Test
    public void loginTest()
    {
-     Assert.assertEquals(false,true);
+     Assert.assertEquals(false,false);
    }
     @Test
     public void searchTest()

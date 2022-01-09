@@ -18,8 +18,7 @@ public class Base {
 	
 	public static void initialization()
 	{
-		System.setProperty("webdriver.chrome.driver","C://Users//Aaradhya//eclipse-workspace"
-				+ "//FreeCRMTest//Drivers//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
 		
 		 driver = new ChromeDriver();
 		 

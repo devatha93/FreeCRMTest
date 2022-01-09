@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.inetbanking.testData.WordpressLogin">
+      <class name="TestNGListenerConcept.ScreenshotTest">
         <methods>
-          <include name="loginToWordpress" invocation-numbers="0 1"/>
+          <include name="createContactsTest"/>
+          <include name="searchTest"/>
+          <include name="tearDown"/>
+          <include name="HomePageTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.inetbanking.testData.WordpressLogin -->
+      </class> <!-- TestNGListenerConcept.ScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,52 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-02T18:03:18 IST" name="Default suite" finished-at="2022-01-02T18:07:48 IST" duration-ms="270642">
+  <suite started-at="2022-01-09T14:10:42 IST" name="Default suite" finished-at="2022-01-09T14:10:52 IST" duration-ms="10539">
     <groups>
     </groups>
-    <test started-at="2022-01-02T18:03:18 IST" name="Default test" finished-at="2022-01-02T18:07:48 IST" duration-ms="270642">
-      <class name="com.inetbanking.testData.WordpressLogin">
-        <test-method signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:com.inetbanking.testData.WordpressLogin@36bc55de]" started-at="2022-01-02T18:03:18 IST" name="loginToWordpress" data-provider="wordpressData" finished-at="2022-01-02T18:05:02 IST" duration-ms="103679" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo1]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+    <test started-at="2022-01-09T14:10:42 IST" name="Default test" finished-at="2022-01-09T14:10:52 IST" duration-ms="10539">
+      <class name="TestNGListenerConcept.ScreenshotTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestNGListenerConcept.ScreenshotTest@3febb011]" started-at="2022-01-09T14:10:42 IST" name="setUp" finished-at="2022-01-09T14:10:51 IST" duration-ms="9305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="HomePageTest()[pri:0, instance:TestNGListenerConcept.ScreenshotTest@3febb011]" started-at="2022-01-09T14:10:51 IST" name="HomePageTest" finished-at="2022-01-09T14:10:51 IST" duration-ms="33" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: No connection could be made because the target machine actively refused it. (os error 10061)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6BAEOA2', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: No connection could be made because the target machine actively refused it. (os error 10061)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6BAEOA2', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:198)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:164)
-at com.inetbanking.testData.WordpressLogin.loginToWordpress(WordpressLogin.java:26)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at TestNGListenerConcept.ScreenshotTest.HomePageTest(ScreenshotTest.java:54)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,55 +55,24 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToWordpress -->
-        <test-method signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:com.inetbanking.testData.WordpressLogin@36bc55de]" started-at="2022-01-02T18:05:02 IST" name="loginToWordpress" data-provider="wordpressData" finished-at="2022-01-02T18:06:10 IST" duration-ms="68189" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- HomePageTest -->
+        <test-method signature="createContactsTest()[pri:0, instance:TestNGListenerConcept.ScreenshotTest@3febb011]" started-at="2022-01-09T14:10:51 IST" name="createContactsTest" finished-at="2022-01-09T14:10:51 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[TimedPromise timed out after 15000 ms
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6BAEOA2', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [6e9fab25-a4a7-4390-bf32-b7424781306d, get {url=https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F&aff=27964}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:62274, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3096, moz:profile: C:\Users\Aaradhya\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62274/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6e9fab25-a4a7-4390-bf32-b7424781306d]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: TimedPromise timed out after 15000 ms
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-6BAEOA2', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [6e9fab25-a4a7-4390-bf32-b7424781306d, get {url=https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F&aff=27964}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 94.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211103134640, moz:debuggerAddress: localhost:62274, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3096, moz:profile: C:\Users\Aaradhya\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62274/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6e9fab25-a4a7-4390-bf32-b7424781306d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
-at com.inetbanking.testData.WordpressLogin.loginToWordpress(WordpressLogin.java:35)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at TestNGListenerConcept.ScreenshotTest.createContactsTest(ScreenshotTest.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,27 +103,67 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToWordpress -->
-        <test-method signature="loginToWordpress(java.lang.String, java.lang.String)[pri:0, instance:com.inetbanking.testData.WordpressLogin@36bc55de]" started-at="2022-01-02T18:06:10 IST" name="loginToWordpress" data-provider="wordpressData" finished-at="2022-01-02T18:07:48 IST" duration-ms="98060" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[demo1234]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- createContactsTest -->
+        <test-method signature="loginTest()[pri:0, instance:TestNGListenerConcept.ScreenshotTest@3febb011]" started-at="2022-01-09T14:10:51 IST" name="loginTest" finished-at="2022-01-09T14:10:51 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToWordpress -->
-      </class> <!-- com.inetbanking.testData.WordpressLogin -->
+        </test-method> <!-- loginTest -->
+        <test-method signature="searchTest()[pri:0, instance:TestNGListenerConcept.ScreenshotTest@3febb011]" started-at="2022-01-09T14:10:51 IST" name="searchTest" finished-at="2022-01-09T14:10:51 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at TestNGListenerConcept.ScreenshotTest.searchTest(ScreenshotTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNGListenerConcept.ScreenshotTest@3febb011]" started-at="2022-01-09T14:10:52 IST" name="tearDown" finished-at="2022-01-09T14:10:52 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestNGListenerConcept.ScreenshotTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
